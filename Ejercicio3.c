@@ -18,7 +18,7 @@ void main()
         }
         else
         {
-      printf ("El numero no es multiplo de 3 \n");
+            printf ("El numero no es multiplo de 3 \n");
         }
     }
     else
