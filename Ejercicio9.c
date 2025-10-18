@@ -2,24 +2,49 @@
 Clase 2, ejercicio 9*/
 
 #include <stdio.h>
-int main ()
+
+void main()
 {
-     char op = 'n';
-     double sum = 0, calif = 0;
-     int veces = 0;
-     do
-     {
-         printf("\tSuma de calificaciones\n");
-         printf("Ingrese la calificación:\n");
-         scanf("%lf", &calif);
-         veces++;
-         sum = sum + calif;
-         printf("¿Desea sumar otra? S/N\n");
-         setbuf(stdin, NULL); // limpia el buffer del teclado
-         scanf("%c",&op);
-         getchar();
-     }
-     while (op == 'S' || op == 's');
-     printf("El promedio de las calificaciones ingresadas es: %lf\n", sum/veces);
-     return 0;
+	int num1, num2, num3, num4, num5;
+
+	printf ("Ingrese un numero: \n");
+	scanf ("%d", &num1);
+	printf ("Ingrese otro numero: \n");
+	scanf ("%d", &num2);
+	printf ("Ingrese otro numero: \n");
+	scanf ("%d", &num3);
+	printf ("Ingrese otro numero: \n");
+	scanf ("%d", &num4);
+	printf ("Ingrese otro numero: \n");
+	scanf ("%d", &num5);
+
+	if (num1<num2 && num1<num3 && num1<num4 && num1<num5)
+	{
+		printf ("El numero: %d es el menor", num1);
+	}
+	else
+	{
+		if (num2<num1 && num2<num3 && num2<num4 && num2<num5)
+	    {
+		    printf ("El numero: %d es el menor", num2);
+	    }
+	    else
+	    {
+	        if (num3<num1 && num3<num2 && num3<num4 && num3<num5)
+	        {
+		        printf ("El numero: %d es el menor", num3);
+	        }
+	        else
+	        {
+	            if (num4<num1 && num4<num3 && num4<num2 && num4<num5)
+	            {    
+		            printf ("El numero: %d es el menor", num4);
+	            }
+	            else
+	            {
+	                printf ("El numero: %d es el menor", num5);
+	            }
+	        }
+	    }
+	}
 }
