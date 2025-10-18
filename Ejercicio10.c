@@ -5,7 +5,7 @@ Clase 2, ejercicio 10*/
 
 void main()
 {
-	int num1, num2, num3, num4, num5;
+	int num1, num2, num3, m, mm, mmm; 
 
 	printf ("Ingrese un numero: \n");
 	scanf ("%d", &num1);
@@ -13,38 +13,30 @@ void main()
 	scanf ("%d", &num2);
 	printf ("Ingrese otro numero: \n");
 	scanf ("%d", &num3);
-	printf ("Ingrese otro numero: \n");
-	scanf ("%d", &num4);
-	printf ("Ingrese otro numero: \n");
-	scanf ("%d", &num5);
 
-	if (num1<num2 && num1<num3 && num1<num4 && num1<num5)
+	if (num1<=num2 && num2<=num3)
 	{
-		printf ("El numero: %d es el menor", num1);
+	    mmm = num3;
+	    mm = num2;
+	    m = num1;
 	}
 	else
 	{
-		if (num2<num1 && num2<num3 && num2<num4 && num2<num5)
+		if (num1<=num3 && num3<=num2)
 	    {
-		    printf ("El numero: %d es el menor", num2);
+		    mmm = num2;
+	        mm = num3;
+	        m = num1;
 	    }
 	    else
 	    {
-	        if (num3<num1 && num3<num2 && num3<num4 && num3<num5)
+	        if (num2<=num3 && num3<=num1)
 	        {
-		        printf ("El numero: %d es el menor", num3);
-	        }
-	        else
-	        {
-	            if (num4<num1 && num4<num3 && num4<num2 && num4<num5)
-	            {    
-		            printf ("El numero: %d es el menor", num4);
-	            }
-	            else
-	            {
-	                printf ("El numero: %d es el menor", num5);
-	            }
+		        mmm = num2;
+	            mm = num3;
+	            m = num1;
 	        }
 	    }
 	}
+    printf ("Los numeros ordenados de mayor a menor: %d => %d => %d", mmm, mm, m);
 }
