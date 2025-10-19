@@ -14,27 +14,48 @@ void main()
 	printf ("Ingrese otro numero: \n");
 	scanf ("%d", &num3);
 
-	if (num1<=num2 && num2<=num3)
+	if (num2<=num3)
 	{
 	    mmm = num3;
-	    mm = num2;
-	    m = num1;
-	}
-	else
-	{
-		if (num1<=num3 && num3<=num2)
+	    if (num1<=num2)
 	    {
-		    mmm = num2;
-	        mm = num3;
+	        mm = num2;
 	        m = num1;
 	    }
 	    else
 	    {
-	        if (num2<=num3 && num3<=num1)
+	        mm = num1;
+	        m = num2;
+	    }
+	}
+	else
+	{
+		if (num3<=num2)
+	    {
+		    mmm = num2;
+		    if (num1<=num3)
 	        {
-		        mmm = num2;
 	            mm = num3;
 	            m = num1;
+	        }
+	        else
+	        {
+	            mm = num1;
+	            m = num3;
+	        }
+	    }
+	    else
+	    {
+	        mmm = num1;
+	        if (num2<=num3)
+	        {
+	            mm = num3;
+	            m = num2;
+	        }
+	        else
+	        {
+	            mm = num2;
+	            m = num3;
 	        }
 	    }
 	}
