@@ -1,3 +1,6 @@
+/* Francisco Coliín Ulises
+Clase 2, ejercicio 16*/
+
 #include <stdio.h>
 int main()
 {
