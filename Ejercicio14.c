@@ -11,7 +11,6 @@ int main()
     printf("Ingrese el sueldo percibido por hora: ");
     scanf("%f", &pre);
     
-    
     if (hor>=0)
     {
     	if (hor<=40)
