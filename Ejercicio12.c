@@ -4,10 +4,10 @@ Clase 2, ejercicio 12 */
 #include <stdio.h>
 int main()
 {
-    int num;
+    char num;
     
     printf("Ingrese algun numero del 1 al 7 para asignar un dia: \n");
-    scanf(" %d", &num);
+    scanf(" %c", &num);
 
 	switch (num)
 	{
