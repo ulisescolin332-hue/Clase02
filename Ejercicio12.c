@@ -7,7 +7,7 @@ int main()
     int num;
     
     printf("Ingrese algun numero del 1 al 7 para asignar un dia: \n");
-    scanf(" %c", &num);
+    scanf(" %d", &num);
 
 	switch (num)
 	{
